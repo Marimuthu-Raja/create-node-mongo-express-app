@@ -1,0 +1,26 @@
+{
+  "name": "create-node-mongo-express-app",
+  "version": "1.0.0",
+  "description": "Node Js Template with MVC pattern, typescript, mongoose and express",
+  "main": "index.js",
+  "keywords": [
+    "nodejs-template",
+    "express",
+    "mongodb",
+    "mongoose",
+    "typescript",
+    "mvc",
+    "mongodb-express-app",
+    "node-mongo-express-app"
+  ],
+  "author": "Marimuthu Raja",
+  "license": "MIT",
+  "bin": {
+    "create-node-mongo-express-app": "./bin/create-node-mongo-express-app.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "create-node-mongo-express-app": "file:",
+    "node-mongo-express-app": "file:"
+  }
+}
