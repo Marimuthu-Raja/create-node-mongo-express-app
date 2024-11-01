@@ -1,8 +1,9 @@
 {
   "name": "create-node-mongo-express-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node Js Template with MVC pattern, typescript, mongoose and express",
   "main": "index.js",
+  "repository": "https://github.com/Marimuthu-Raja/create-node-mongo-express-app",
   "keywords": [
     "nodejs-template",
     "express",
