@@ -4,6 +4,7 @@ import Promisify from './utils/Promisify';
 import { verifyApiKey } from './middleware/auth.middleware';
 import { todoRouter } from './router/todo.router';
 import { errorHandler } from './middleware/errorhandler.middleware';
+import { APIVERSION } from './constants/version';
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -12,7 +13,7 @@ app.use(morganMiddleware);
 
 app.use('/health', (req, res) => res.send('OK'));
 app.use(Promisify(verifyApiKey));
-app.use(`/api/v1/todo`, todoRouter);
+app.use(`/api/${APIVERSION.V1}/todo`, todoRouter);
 
 app.use(errorHandler);
 export { app };
